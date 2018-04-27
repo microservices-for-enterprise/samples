@@ -1,4 +1,4 @@
-package com.apress.ch11.sample01.config;
+package com.apress.ch11.sample04.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,9 +7,8 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
-public class WebSecurityConguration extends WebSecurityConfigurerAdapter {
-	
-	
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
 	@Override
 	@Bean
 	public AuthenticationManager authenticationManagerBean() throws Exception {
@@ -18,7 +17,7 @@ public class WebSecurityConguration extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("peter").password("peter123").roles("USER");
+		auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ACTUATOR");
 	}
 
 }
