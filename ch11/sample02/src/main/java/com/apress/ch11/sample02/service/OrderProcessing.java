@@ -6,6 +6,7 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +34,8 @@ public class OrderProcessing {
 		return ResponseEntity.ok("{'status' : 'shipped'}");
 	}
 
+	@PreAuthorize("#oauth2.hasScope('bar') and hasRole('USER')")
+	//@PreAuthorize("hasRole('USER')")
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<?> getOrder(@PathVariable("id") String orderId) {
 		Item book1 = new Item("101", 1);

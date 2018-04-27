@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.apress.ch11.sample02.model.Item;
 
+
 @Component
 public class InventoryClient {
 
@@ -15,7 +16,7 @@ public class InventoryClient {
 	OAuth2RestTemplate restTemplate;
 
 	public void updateInventory(Item[] items) {
-		URI uri = URI.create("http://localhost:9090/inventory");
+		URI uri = URI.create("https://localhost:10443/inventory");
 		restTemplate.put(uri, items);
 	}
 }
