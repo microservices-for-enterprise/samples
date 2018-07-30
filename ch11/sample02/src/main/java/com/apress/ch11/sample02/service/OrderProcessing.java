@@ -34,7 +34,7 @@ public class OrderProcessing {
 		return ResponseEntity.ok("{'status' : 'shipped'}");
 	}
 
-	@PreAuthorize("#oauth2.hasScope('bar') and hasRole('USER')")
+	//@PreAuthorize("#oauth2.hasScope('bar') and hasRole('USER')")
 	//@PreAuthorize("hasRole('USER')")
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<?> getOrder(@PathVariable("id") String orderId) {
