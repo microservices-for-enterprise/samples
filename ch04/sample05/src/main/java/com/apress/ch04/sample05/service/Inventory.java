@@ -1,14 +1,14 @@
 package com.apress.ch04.sample05.service;
 
-import com.apress.ch04.sample05.services.ItemList;
-import com.apress.ch04.sample05.services.UpdateItemsResp;
+import com.apress.ch04.sample05.service.ItemList;
+import com.apress.ch04.sample05.service.UpdateItemsResp;
 
 import java.util.List;
 
 import org.lognet.springboot.grpc.GRpcService;
 
-import com.apress.ch04.sample05.services.InventoryServiceGrpc.InventoryServiceImplBase;
-import com.apress.ch04.sample05.services.Item;
+import com.apress.ch04.sample05.service.InventoryServiceGrpc.InventoryServiceImplBase;
+import com.apress.ch04.sample05.service.Item;
 
 import io.grpc.stub.StreamObserver;
 
