@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-package com.apress.ch04.sample05.services;
+package com.apress.ch04.sample05.service;
 
 message Item {
     string code = 1;
