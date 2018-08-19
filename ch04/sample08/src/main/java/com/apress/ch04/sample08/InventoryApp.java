@@ -17,7 +17,7 @@ public class InventoryApp {
 	}
 
 	@StreamListener(Sink.INPUT)
-	public void consumerOderUpdates(Order order) {
+	public void consumeOderUpdates(Order order) {
 		System.out.println(order.getOrderId());
 	}
 }
