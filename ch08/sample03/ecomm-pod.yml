@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: orderprocessing
-      image: prabath/sample01
+      image: prabath/sample04
       ports:
         - containerPort : 9000
     - name: inventory
