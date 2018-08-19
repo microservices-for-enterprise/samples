@@ -21,6 +21,12 @@ import com.apress.ch04.sample01.model.PaymentMethod;
 @RequestMapping(value = "/order")
 public class OrderProcessing {
 
+	/**
+	 * this method accepts an order id and returns back the status of the order.
+	 * 
+	 * @param orderId
+	 * @return
+	 */
 	@RequestMapping(value = "/{id}/status", method = RequestMethod.GET)
 	public ResponseEntity<?> checkOrderStatus(@PathVariable("id") String orderId) {
 		return ResponseEntity.ok("{'status' : 'shipped'}");
@@ -38,16 +44,16 @@ public class OrderProcessing {
 
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<?> createOrder(@RequestBody Order order) {
-		
+
 		if (order != null) {
 			RestTemplate restTemplate = new RestTemplate();
 			URI uri = URI.create("http://localhost:9000/inventory");
 			restTemplate.put(uri, order.getItems());
-			
+
 			order.setOrderId(UUID.randomUUID().toString());
 			URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 					.buildAndExpand(order.getOrderId()).toUri();
-			
+
 			return ResponseEntity.created(location).build();
 		}
 
