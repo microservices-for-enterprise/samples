@@ -1,3 +1,0 @@
-
-
-Service discovery with Consul 
