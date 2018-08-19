@@ -1,3 +1,3 @@
 FROM openjdk:8-jdk-alpine
-ADD target/sample01-1.0.0.jar /sample01-1.0.0.jar
-ENTRYPOINT ["java", "-jar", "sample01-1.0.0.jar"]
+ADD target/sample04-1.0.0.jar /sample04-1.0.0.jar
+ENTRYPOINT ["java", "-jar", "sample04-1.0.0.jar"]
