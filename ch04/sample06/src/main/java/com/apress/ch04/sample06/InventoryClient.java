@@ -1,9 +1,9 @@
 package com.apress.ch04.sample06;
 
-import com.apress.ch04.sample05.services.InventoryServiceGrpc;
-import com.apress.ch04.sample05.services.InventoryServiceGrpc.InventoryServiceBlockingStub;
-import com.apress.ch04.sample05.services.Item;
-import com.apress.ch04.sample05.services.ItemList;
+import com.apress.ch04.sample05.service.InventoryServiceGrpc;
+import com.apress.ch04.sample05.service.InventoryServiceGrpc.InventoryServiceBlockingStub;
+import com.apress.ch04.sample05.service.Item;
+import com.apress.ch04.sample05.service.ItemList;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
