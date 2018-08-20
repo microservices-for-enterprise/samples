@@ -1,4 +1,4 @@
-package com.apress.ch11.sample02.client;
+package com.apress.ch12.sample02.client;
 
 import java.net.URI;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.stereotype.Component;
 
-import com.apress.ch11.sample02.model.Item;
+import com.apress.ch12.sample02.model.Item;
 
 
 @Component

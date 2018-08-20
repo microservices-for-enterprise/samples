@@ -1,4 +1,4 @@
-package com.apress.ch11.sample02.service;
+package com.apress.ch12.sample02.service;
 
 import java.net.URI;
 import java.util.UUID;
@@ -6,7 +6,6 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.apress.ch11.sample02.client.InventoryClient;
-import com.apress.ch11.sample02.model.Item;
-import com.apress.ch11.sample02.model.Order;
-import com.apress.ch11.sample02.model.PaymentMethod;
+import com.apress.ch12.sample02.client.InventoryClient;
+import com.apress.ch12.sample02.model.Item;
+import com.apress.ch12.sample02.model.Order;
+import com.apress.ch12.sample02.model.PaymentMethod;
 
 
 

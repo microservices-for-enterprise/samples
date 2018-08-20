@@ -1,4 +1,4 @@
-package com.apress.ch11.sample02.model;
+package com.apress.ch12.sample02.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
