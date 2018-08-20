@@ -1,4 +1,4 @@
-package com.apress.ch11.sample01.config;
+package com.apress.ch12.sample01.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

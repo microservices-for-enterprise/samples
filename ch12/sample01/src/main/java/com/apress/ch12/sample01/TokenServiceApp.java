@@ -1,4 +1,4 @@
-package com.apress.ch11.sample01;
+package com.apress.ch12.sample01;
 
 import java.security.Principal;
 
