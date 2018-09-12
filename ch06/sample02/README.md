@@ -14,6 +14,17 @@
 - `` eureka-service-registration`` application registers with Eureka Service Registry. 
 - `` @EnableDiscoveryClient`` annotation that we have at the Spring Boot application makes sure that the appliction is registered with the Eureka Registry. The name of the application is 
 picked from `` spring.application.name`` property in `` bootstrap.properties`` file (here we use ``hello-service`` as the name of the service). 
+- The details of the Eureka server that you connect with is configured in `` resources/application.yml `` with the following configuration.
+
+    ```
+    eureka:
+    client:
+        serviceUrl:
+        defaultZone: http://localhost:8762/eureka/ 
+
+    ```
+
+
 - You can run this applicaiton with `` mvn spring-boot:run`` inside the application directory. 
 
 ## Discovering services 
