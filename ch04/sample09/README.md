@@ -1,4 +1,4 @@
-#GraphQL with Spring Boot  
+# GraphQL with Spring Boot  
 
 1. You can run the BookStore GraphQL service with :
 

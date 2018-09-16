@@ -1,9 +1,13 @@
 
 # Spring Boot - RESTful Service 
 
-This sample demonstrate the RESTful service capabilities of Spring Boot. 
+This sample from the [book](https://www.apress.com/us/book/9781484238578) demonstrates how you can build RESTful services with Spring Boot. 
 
-## Test Service 
+## Run 
+You can run the sample by executing `` mvn spring-boot:run`` command in your terminal.  
+
+
+## Test 
 You can test the RESTful service with the following HTTP requests. 
 
 ### Retrieve Order : HTTP GET  
