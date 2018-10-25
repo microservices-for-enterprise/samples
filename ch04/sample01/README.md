@@ -1,4 +1,4 @@
-## Chapter 4: Developing Services (Sample01)
+## Chapter 4: Developing Services (Sample01/OrderProcessing Microservice)
 
 * To build the project with Maven, use the following command from sample01 directory.
 
