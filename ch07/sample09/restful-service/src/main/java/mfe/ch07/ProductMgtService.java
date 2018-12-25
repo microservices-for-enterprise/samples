@@ -70,9 +70,9 @@ public class ProductMgtService extends AbstractVerticle {
     }
 
     private void setUpInitialData() {
-        addProduct(new JsonObject().put("id", "prod3568").put("name", "Egg Whisk").put("price", 3.99).put("weight", 150));
-        addProduct(new JsonObject().put("id", "prod7340").put("name", "Tea Cosy").put("price", 5.99).put("weight", 100));
-        addProduct(new JsonObject().put("id", "prod8643").put("name", "Spatula").put("price", 1.00).put("weight", 80));
+        addProduct(new JsonObject().put("id", "100500").put("name", "iPhone XS ").put("price", 999.99).put("weight", 250));
+        addProduct(new JsonObject().put("id", "100501").put("name", "Google Pixel 3").put("price", 799.99).put("weight", 260));
+        addProduct(new JsonObject().put("id", "100502").put("name", "Samsung Galaxy S9 ").put("price", 700.00).put("weight", 280));
     }
 
     private void addProduct(JsonObject product) {
