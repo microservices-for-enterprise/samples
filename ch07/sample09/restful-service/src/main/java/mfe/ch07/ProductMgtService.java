@@ -29,6 +29,7 @@ public class ProductMgtService extends AbstractVerticle {
         vertx.createHttpServer().requestHandler(router::accept).listen(8080);
     }
     private void handleGetProduct(RoutingContext routingContext) {
+        System.out.println("prod id invoked ...");
         String productID = routingContext.request().getParam("productID");
         HttpServerResponse response = routingContext.response();
         if (productID == null) {

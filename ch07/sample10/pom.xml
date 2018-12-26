@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.vertx</groupId>
-    <artifactId>vertx-restful-service</artifactId>
-    <version>3.5.3</version>
+    <artifactId>vertx-service-invoker</artifactId>
+    <version>3.6.2</version>
 
     <properties>
-        <exec.mainClass>mfe.ch07.ProductMgtService</exec.mainClass>
+        <exec.mainClass>mfe.ch07.HTTPInvokerService</exec.mainClass>
     </properties>
 
     <dependencies>
@@ -53,7 +53,7 @@
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
                                         <Main-Class>io.vertx.core.Launcher</Main-Class>
-                                        <Main-Verticle>mfe.ch07.ProductMgtService</Main-Verticle>
+                                        <Main-Verticle>mfe.ch07.HTTPInvokerService</Main-Verticle>
                                     </manifestEntries>
                                 </transformer>
                             </transformers>
