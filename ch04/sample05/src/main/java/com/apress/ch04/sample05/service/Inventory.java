@@ -1,16 +1,10 @@
 package com.apress.ch04.sample05.service;
 
-import com.apress.ch04.sample05.service.ItemList;
-import com.apress.ch04.sample05.service.UpdateItemsResp;
-
-import java.util.List;
-
+import com.apress.ch04.sample05.service.InventoryServiceGrpc.InventoryServiceImplBase;
+import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 
-import com.apress.ch04.sample05.service.InventoryServiceGrpc.InventoryServiceImplBase;
-import com.apress.ch04.sample05.service.Item;
-
-import io.grpc.stub.StreamObserver;
+import java.util.List;
 
 @GRpcService
 public class Inventory extends InventoryServiceImplBase{
