@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: metaparticle-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: metaparticle.demo.io
+    http:
+      paths:
+      - path: /metaparticle
+        backend:
+          serviceName: kasun-metaparticle-metaparticlespringboothello-mpsbhello
+          servicePort: 8080
