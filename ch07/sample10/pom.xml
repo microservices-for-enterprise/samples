@@ -7,7 +7,7 @@
 
     <groupId>io.vertx</groupId>
     <artifactId>vertx-service-invoker</artifactId>
-    <version>3.6.2</version>
+    <version>3.9.4</version>
 
     <properties>
         <exec.mainClass>mfe.ch07.HTTPInvokerService</exec.mainClass>
