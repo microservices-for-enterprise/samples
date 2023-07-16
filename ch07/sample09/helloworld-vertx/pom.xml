@@ -7,7 +7,7 @@
 
   <groupId>io.vertx</groupId>
   <artifactId>vertx_helloworld_service</artifactId>
-  <version>3.5.3</version>
+  <version>3.5.4</version>
 
   <properties>
     <exec.mainClass>mfe.ch07.HelloWorldService</exec.mainClass>
